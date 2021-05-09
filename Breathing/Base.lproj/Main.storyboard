@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bnI-Lt-Yh1">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TsukushiAMaruGothic.ttc">
+            <string>TsukuARdGothic-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="kYb-zg-xxm">
+            <objects>
+                <viewController id="Auk-cH-9BC" customClass="ViewController" customModule="Breathing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Sf-Mx-heu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qN9-9s-46h">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="1F8-rP-ZIm"/>
+                                    <constraint firstAttribute="height" constant="200" id="fBl-Ug-ttI"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="MeditatingManCircle"/>
+                                <connections>
+                                    <action selector="meditatingTapped:" destination="Auk-cH-9BC" eventType="touchUpInside" id="sxI-7t-gVw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stress Relief Journey" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvM-Oc-qOp">
+                                <rect key="frame" x="67" y="141" width="280" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="WhI-N6-pjX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TsukuARdGothic-Bold" family="Tsukushi A Round Gothic" pointSize="42"/>
+                                <color key="textColor" red="0.30980392156862746" green="0.60392156862745094" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Anywhere to Begin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQj-2I-TU0">
+                                <rect key="frame" x="79.333333333333329" y="585" width="255.66666666666669" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="wfZ-gY-SX5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TsukuARdGothic-Bold" family="Tsukushi A Round Gothic" pointSize="24"/>
+                                <color key="textColor" red="0.54509803921568623" green="0.74901960784313726" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.54509803921568623" green="0.74901960784313726" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hgz-Ah-l8J"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="VQj-2I-TU0" firstAttribute="centerX" secondItem="6Sf-Mx-heu" secondAttribute="centerX" id="2c2-iG-Xt0"/>
+                            <constraint firstItem="EvM-Oc-qOp" firstAttribute="top" secondItem="hgz-Ah-l8J" secondAttribute="top" constant="97" id="5kj-j2-frh"/>
+                            <constraint firstItem="EvM-Oc-qOp" firstAttribute="centerX" secondItem="6Sf-Mx-heu" secondAttribute="centerX" id="7hv-m7-IA4"/>
+                            <constraint firstItem="qN9-9s-46h" firstAttribute="centerX" secondItem="6Sf-Mx-heu" secondAttribute="centerX" id="7wT-qY-Cn6"/>
+                            <constraint firstItem="hgz-Ah-l8J" firstAttribute="trailing" secondItem="EvM-Oc-qOp" secondAttribute="trailing" constant="67" id="ec1-iR-spu"/>
+                            <constraint firstItem="qN9-9s-46h" firstAttribute="centerY" secondItem="6Sf-Mx-heu" secondAttribute="centerY" id="geg-RU-2ji"/>
+                            <constraint firstItem="VQj-2I-TU0" firstAttribute="top" secondItem="qN9-9s-46h" secondAttribute="bottom" constant="37" id="kjE-Uy-e7c"/>
+                            <constraint firstItem="EvM-Oc-qOp" firstAttribute="leading" secondItem="hgz-Ah-l8J" secondAttribute="leading" constant="67" id="nDC-3s-bgu"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="daF-aQ-Vr8" appends="YES" id="1w6-7i-rDe"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hxa-So-D3L"/>
+                    <connections>
+                        <outlet property="meditatingButton" destination="qN9-9s-46h" id="Kgx-CJ-OKK"/>
+                        <outlet property="tappingLabel" destination="VQj-2I-TU0" id="vso-gV-hSL"/>
+                        <segue destination="g7Y-Gv-ou7" kind="show" identifier="userInput" id="Cpk-zi-Mv9"/>
+                        <segue destination="LtG-Hv-tel" kind="show" identifier="breathing" id="qxq-iP-DvK"/>
+                        <segue destination="0Rj-e4-5T0" kind="show" identifier="storyView" id="pUH-Ua-fEq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eJt-kW-kMV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="daF-aQ-Vr8">
+                    <connections>
+                        <action selector="screenTap:" destination="Auk-cH-9BC" id="8vK-82-QRH"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-605.79710144927537" y="75"/>
+        </scene>
+        <!--UserDataView-->
+        <scene sceneID="Ffs-fc-Yzb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UserDataView" id="g7Y-Gv-ou7" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="TTC-1A-d0w"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iS4-SP-Yl1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36.956521739130437" y="75"/>
+        </scene>
+        <!--BreathingView-->
+        <scene sceneID="aYN-y1-cp6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BreathingView" id="LtG-Hv-tel" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="G4I-h6-pGr"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6t8-Fw-uXl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45" y="197"/>
+        </scene>
+        <!--StoryView-->
+        <scene sceneID="OFp-tc-bVb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StoryView" id="0Rj-e4-5T0" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="vv5-nQ-4Ft"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lv3-GD-NST" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11" y="307"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="80x-7N-2Em">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="bnI-Lt-Yh1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uxX-l5-KX1">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Auk-cH-9BC" kind="relationship" relationship="rootViewController" id="V9m-MG-pKP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CUw-LS-2Xh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1515.9420289855075" y="75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MeditatingManCircle" width="579" height="582"/>
+    </resources>
+</document>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aSn-54-1JL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TsukushiAMaruGothic.ttc">
+            <string>TsukuARdGothic-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--UserDataView-->
+        <scene sceneID="rEf-eX-n79">
+            <objects>
+                <viewController title="UserDataView" id="aSn-54-1JL" customClass="UserDataViewController" customModule="Breathing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q1o-g1-sfD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stress Relief Journey" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EN2-bK-Xda">
+                                <rect key="frame" x="67" y="141" width="280" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="fQZ-GS-nv1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TsukuARdGothic-Bold" family="Tsukushi A Round Gothic" pointSize="42"/>
+                                <color key="textColor" red="0.30980392156862746" green="0.60392156862745094" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeditatingMan" translatesAutoresizingMaskIntoConstraints="NO" id="3Zj-4t-6Oi">
+                                <rect key="frame" x="85" y="305" width="244" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="njN-rx-uXz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, Buddies!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKm-uf-4eu">
+                                <rect key="frame" x="36" y="535" width="198" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.30980392159999998" green="0.60392156860000001" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We haven’t known each other. A friend is not a friend if they don’t share each name. Therefore, I wish to know your name!" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWV-RF-WID">
+                                <rect key="frame" x="36" y="562" width="342" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="qsn-tS-3pL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="textColor" red="0.57659856513524321" green="0.7054170696143397" blue="0.88080189040469636" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" allowsEditingTextAttributes="YES" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bne-YJ-Zb7">
+                                <rect key="frame" x="36" y="641" width="342" height="44"/>
+                                <color key="tintColor" red="0.30980392159999998" green="0.60392156860000001" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="03i-EB-xat"/>
+                                    <constraint firstAttribute="width" constant="342" id="vJ8-9Z-1wH"/>
+                                </constraints>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <fontDescription key="fontDescription" name="TsukuARdGothic-Bold" family="Tsukushi A Round Gothic" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldChange:" destination="aSn-54-1JL" eventType="editingChanged" id="x73-pc-gOU"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" allowsEditingTextAttributes="YES" placeholder="Second Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ywh-iA-Fa0">
+                                <rect key="frame" x="36" y="699" width="342" height="44"/>
+                                <color key="tintColor" red="0.30980392159999998" green="0.60392156860000001" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="342" id="i1d-jR-x68"/>
+                                    <constraint firstAttribute="height" constant="44" id="qHF-TP-GJe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TsukuARdGothic-Bold" family="Tsukushi A Round Gothic" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9o-ro-hum">
+                                <rect key="frame" x="36" y="775" width="342" height="42"/>
+                                <color key="backgroundColor" red="0.58039215686274503" green="0.76862745098039209" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="aPa-Tl-2qj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TsukuARdGothic-Bold" family="Tsukushi A Round Gothic" pointSize="20"/>
+                                <state key="normal" title="Let's Go">
+                                    <color key="titleColor" name="Color"/>
+                                </state>
+                                <connections>
+                                    <action selector="goTapped:" destination="aSn-54-1JL" eventType="touchUpInside" id="2w8-Sn-niZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MmX-yL-DqB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MmX-yL-DqB" firstAttribute="trailing" secondItem="mWV-RF-WID" secondAttribute="trailing" constant="36" id="0jl-1f-4Mb"/>
+                            <constraint firstItem="bne-YJ-Zb7" firstAttribute="top" secondItem="mWV-RF-WID" secondAttribute="bottom" constant="18" id="568-ip-Mh3"/>
+                            <constraint firstItem="MmX-yL-DqB" firstAttribute="trailing" secondItem="3Zj-4t-6Oi" secondAttribute="trailing" constant="85" id="6Ig-4x-Aj6"/>
+                            <constraint firstItem="MmX-yL-DqB" firstAttribute="trailing" secondItem="EN2-bK-Xda" secondAttribute="trailing" constant="67" id="CwW-92-MVr"/>
+                            <constraint firstItem="EN2-bK-Xda" firstAttribute="leading" secondItem="MmX-yL-DqB" secondAttribute="leading" constant="67" id="FDi-ob-ZON"/>
+                            <constraint firstItem="ywh-iA-Fa0" firstAttribute="leading" secondItem="MmX-yL-DqB" secondAttribute="leading" constant="36" id="HMm-3w-9J9"/>
+                            <constraint firstItem="3Zj-4t-6Oi" firstAttribute="top" secondItem="EN2-bK-Xda" secondAttribute="bottom" constant="64" id="Kr5-IA-w9t"/>
+                            <constraint firstItem="V9o-ro-hum" firstAttribute="top" secondItem="ywh-iA-Fa0" secondAttribute="bottom" constant="32" id="LXz-g7-0vS"/>
+                            <constraint firstItem="EN2-bK-Xda" firstAttribute="top" secondItem="MmX-yL-DqB" secondAttribute="top" constant="97" id="RAy-kk-I06"/>
+                            <constraint firstItem="MmX-yL-DqB" firstAttribute="trailing" secondItem="V9o-ro-hum" secondAttribute="trailing" constant="36" id="Tfd-vl-V0v"/>
+                            <constraint firstItem="bne-YJ-Zb7" firstAttribute="top" secondItem="mWV-RF-WID" secondAttribute="bottom" constant="18" id="VL2-VX-UGs"/>
+                            <constraint firstItem="MmX-yL-DqB" firstAttribute="trailing" secondItem="ywh-iA-Fa0" secondAttribute="trailing" constant="36" id="Wfu-Cn-9yT"/>
+                            <constraint firstItem="MmX-yL-DqB" firstAttribute="bottom" secondItem="V9o-ro-hum" secondAttribute="bottom" constant="45" id="XO3-DP-3jl"/>
+                            <constraint firstItem="3Zj-4t-6Oi" firstAttribute="leading" secondItem="MmX-yL-DqB" secondAttribute="leading" constant="85" id="XQC-17-NXG"/>
+                            <constraint firstItem="xKm-uf-4eu" firstAttribute="leading" secondItem="MmX-yL-DqB" secondAttribute="leading" constant="36" id="dK9-M4-3cL"/>
+                            <constraint firstItem="mWV-RF-WID" firstAttribute="leading" secondItem="MmX-yL-DqB" secondAttribute="leading" constant="36" id="fLi-iI-VH2"/>
+                            <constraint firstItem="bne-YJ-Zb7" firstAttribute="leading" secondItem="MmX-yL-DqB" secondAttribute="leading" constant="36" id="fkc-vY-9kr"/>
+                            <constraint firstItem="MmX-yL-DqB" firstAttribute="trailing" secondItem="bne-YJ-Zb7" secondAttribute="trailing" constant="36" id="mIo-3r-w2Q"/>
+                            <constraint firstItem="MmX-yL-DqB" firstAttribute="trailing" secondItem="xKm-uf-4eu" secondAttribute="trailing" constant="180" id="sAl-6k-UOn"/>
+                            <constraint firstItem="mWV-RF-WID" firstAttribute="top" secondItem="xKm-uf-4eu" secondAttribute="bottom" constant="3" id="sdi-kE-eIj"/>
+                            <constraint firstItem="V9o-ro-hum" firstAttribute="leading" secondItem="MmX-yL-DqB" secondAttribute="leading" constant="36" id="tVs-Op-jkq"/>
+                            <constraint firstItem="ywh-iA-Fa0" firstAttribute="top" secondItem="bne-YJ-Zb7" secondAttribute="bottom" constant="14" id="v1a-kp-sdB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstNameTextField" destination="bne-YJ-Zb7" id="SJN-jU-ojx"/>
+                        <outlet property="goButton" destination="V9o-ro-hum" id="O70-O9-dDF"/>
+                        <outlet property="secondNameTextField" destination="ywh-iA-Fa0" id="P46-Z1-CtO"/>
+                        <segue destination="u5e-Iz-IHt" kind="show" identifier="storyView" id="tE9-il-F1A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OuI-I6-MOA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.086956521739133" y="150"/>
+        </scene>
+        <!--StoryView-->
+        <scene sceneID="abf-TD-mgb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StoryView" id="u5e-Iz-IHt" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="CNk-9D-E1Q"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fuh-VG-xXs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="604" y="141"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MeditatingMan" width="500" height="500"/>
+        <namedColor name="Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
